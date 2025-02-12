@@ -291,7 +291,7 @@ def main():
 
     #############-----------FINISH----------#############
     #####################################################
-
+    avaluacio_retorn = avaluacio_retorn + ('\n') + "Puntuació: " + str(puntuacio) + ('\n')
     res_txt.write("puntuació: " + str(puntuacio) + ('\n'))
     res_txt.close()
 
