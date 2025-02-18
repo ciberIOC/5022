@@ -230,7 +230,7 @@ def main():
     alServer2 = almalinuxServer_2(res_txt)
     alServer3 = almalinuxServer_3(res_txt)
     alServer4 = almalinuxServer_4(res_txt)
-    if '[OK]' in alServer1 and '[OK]' in alServer2 and '[OK]' in alServer3 and '[OK]' in alServer4::
+    if '[OK]' in alServer1 and '[OK]' in alServer2 and '[OK]' in alServer3 and '[OK]' in alServer4:
         puntuacio = puntuacio + 1
     avaluacio_retorn = avaluacio_retorn + alServer1 + ('\n') + alServer2 + ('\n') + alServer3 + ('\n') + alServer4 + ('\n')
 
