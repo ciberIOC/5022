@@ -228,16 +228,11 @@ def main():
 
     alServer1 = almalinuxServer_1(res_txt)
     alServer2 = almalinuxServer_2(res_txt)
-    if '[OK]' in alServer1 and '[OK]' in alServer2:
-        puntuacio = puntuacio + 1
-    avaluacio_retorn = avaluacio_retorn + alServer1 + ('\n') + alServer2 + ('\n')
-
     alServer3 = almalinuxServer_3(res_txt)
     alServer4 = almalinuxServer_4(res_txt)
-    if '[OK]' in alServer3 and '[OK]' in alServer3:
+    if '[OK]' in alServer1 and '[OK]' in alServer2 and '[OK]' in alServer3 and '[OK]' in alServer4::
         puntuacio = puntuacio + 1
-    avaluacio_retorn = avaluacio_retorn + alServer3 + ('\n') + alServer4 + ('\n')
-
+    avaluacio_retorn = avaluacio_retorn + alServer1 + ('\n') + alServer2 + ('\n') + alServer3 + ('\n') + alServer4 + ('\n')
 
     alServer5 = almalinuxServer_5(res_txt)
     if '[OK]' in alServer5:
@@ -248,13 +243,11 @@ def main():
 
     ubServer2 = UbuntuServer_2(res_txt)
 
-    if '[OK]' in ubServer1 and '[OK]' in ubServer2:
-        puntuacio = puntuacio + 1
-    avaluacio_retorn = avaluacio_retorn + ubServer1 + ('\n') + ubServer2 + ('\n')
     ubServer3 = UbuntuServer_3(res_txt)
-    if '[OK]' in ubServer3:
+
+    if '[OK]' in ubServer1 and '[OK]' in ubServer2 and '[OK]' in ubServer3:
         puntuacio = puntuacio + 1
-    avaluacio_retorn = avaluacio_retorn + ubServer3 + ('\n')
+    avaluacio_retorn = avaluacio_retorn + ubServer1 + ('\n') + ubServer2 + ('\n') + ubServer3 + ('\n') 
 
     ubServer4 = UbuntuServer_4(res_txt)
     ubServer5 = UbuntuServer_5(res_txt)
